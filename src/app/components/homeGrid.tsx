@@ -1,56 +1,45 @@
 // import { animated } from "@react-spring/web";
 import Link from "next/link";
+import ShootingStarBorder from "./shootingStartBorder";
 
 export default function HomeGrid() {
     return (
         <div className="grid grid-cols-3 gap-4 min-h-screen p-8 pb-20 sm:p-20 bg-white font-[family-name:var(--font-geist-sans)]">
             <Link
                 href="/projects"
-                className="border-solid border-2 border-black text-black row-span-10"
+                className="rounded-xl border-none border-2 border-black text-black row-span-10 hover:bg-indigo-400"
             >
-                <span className="box-decoration-clone bg-indigo-500 border-solid border-2 border-black">
-                    Projects
-                </span>
+                <span className="font-lilitaOne text-2xl">Projects</span>
             </Link>
             <Link
                 href="/education"
-                className="border-solid border-2 border-black text-black row-span-2 col-span-1"
+                className="rounded-xl border-none border-2 border-black text-black row-span-2 col-span-1 hover:bg-amber-100"
             >
-                <span className="box-decoration-clone bg-indigo-500 border-solid border-2 border-black">
-                    Education
-                </span>
+                <span className="font-lilitaOne text-2xl">Education</span>
             </Link>
             <Link
                 href="/experience"
-                className="border-solid border-2 border-black text-black row-span-6 col-span-1 col-start-3"
+                className="rounded-xl border-none border-2 border-black text-black row-span-6 col-span-1 col-start-3 hover:bg-amber-100"
             >
-                <span className="box-decoration-clone bg-indigo-500 border-solid border-2 border-black">
-                    Work Experience
-                </span>
+                <span className="font-lilitaOne text-2xl">Work Experience</span>
             </Link>
             <Link
                 href="/aboutme"
-                className="border-solid border-2 border-black text-black row-span-8 col-span-1"
+                className="rounded-xl border-none border-2 border-black text-black row-span-8 col-span-1 hover:bg-indigo-400"
             >
-                <span className="box-decoration-clone bg-indigo-500 border-solid border-2 border-black">
-                    Debora Kwon
-                </span>
+                <span className="font-lilitaOne text-2xl">Debora Kwon</span>
             </Link>
             <Link
                 href="/goals"
-                className="border-solid border-2 border-black text-black row-span-8"
+                className="rounded-xl border-none border border-black text-black row-span-8 hover:bg-indigo-400"
             >
-                <span className="box-decoration-clone bg-indigo-500 border-solid border-2 border-black">
-                    Goals
-                </span>
+                <span className="font-lilitaOne text-2xl">Goals</span>
             </Link>
-            <div className="border-solid border-2 border-black text-black col-start-1 row-span-4">
-                <span className="box-decoration-clone bg-indigo-500 border-solid border-2 border-black">
-                    Resume
-                </span>
+            <div className="rounded-xl border-none border border-black text-black col-start-1 row-span-4 hover:bg-amber-100">
+                <span className="font-lilitaOne text-2xl">Resume</span>
             </div>
-            <div className="border-solid border-2 border-black text-black col-span-1 row-span-4">
-                Contact Me
+            <div className="rounded-xl border-none border-2 border-black text-black col-span-1 row-span-4 hover:bg-amber-100">
+                <span className="font-lilitaOne text-2xl">Contact Me</span>
             </div>
         </div>
     );
