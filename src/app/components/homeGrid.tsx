@@ -2,6 +2,7 @@
 import Link from "next/link";
 import ShootingStarBorder from "./shootingStartBorder";
 import { ModeToggle } from "./modeToggle";
+import GitHubCalendar from "react-github-calendar";
 
 export default function HomeGrid() {
     return (
@@ -39,6 +40,7 @@ export default function HomeGrid() {
             </Link>
             <div className="rounded-xl border-none border border-black text-black col-start-1 row-span-4 hover:bg-amber-100 dark:border-white dark:border-solid dark:text-white">
                 <span className="font-lilitaOne text-2xl">Github</span>
+                <GitHubCalendar username="debora-k" />
             </div>
             <div className="rounded-xl border-none border-2 border-black text-black col-span-1 row-span-4 hover:bg-amber-100 dark:border-white dark:border-solid dark:text-white">
                 <span className="font-lilitaOne text-2xl">Contact</span>
