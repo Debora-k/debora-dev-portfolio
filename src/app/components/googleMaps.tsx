@@ -8,8 +8,8 @@ const containerStyle = {
 };
 
 const center = {
-    lat: -3.745,
-    lng: -38.523,
+    lat: 51.049999,
+    lng: -114.066666,
 };
 
 function MyComponent() {
@@ -21,9 +21,8 @@ function MyComponent() {
     const [map, setMap] = React.useState(null);
 
     const onLoad = React.useCallback(function callback(map) {
-        // This is just an example of getting and using the map instance!!! don't just blindly copy!
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
+        // const bounds = new window.google.maps.LatLngBounds(center);
+        // map.fitBounds(bounds);
 
         setMap(map);
     }, []);

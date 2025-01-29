@@ -28,7 +28,9 @@ export default function HomeGrid() {
             </Link>
             <div className="pt-2 rounded-xl border-none border-2 border-black text-black row-span-2 col-span-1 hover:bg-amber-100 dark:border-white dark:border-solid dark:text-white">
                 <span className="font-lilitaOne text-2xl pl-3">Location</span>
-                <MyMapComponent />
+                <div className="pl-3 pb-2">
+                    <MyMapComponent />
+                </div>
             </div>
             <span className="justify-self-end col-start-5">
                 <ModeToggle />
